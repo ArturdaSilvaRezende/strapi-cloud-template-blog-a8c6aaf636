@@ -1,21 +1,20 @@
 {
-  "kind": "singleType",
-  "collectionName": "abouts",
+  "kind": "collectionType",
+  "collectionName": "noticias",
   "info": {
-    "singularName": "about",
-    "pluralName": "abouts",
-    "displayName": "Santa-Casa",
-    "description": "Write about yourself and the content you create"
+    "singularName": "noticia",
+    "pluralName": "noticias",
+    "displayName": "noticias"
   },
   "options": {
-    "draftAndPublish": false
+    "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "Title": {
+    "title": {
       "type": "string"
     },
-    "Main_Image": {
+    "banner": {
       "type": "media",
       "multiple": false,
       "allowedTypes": [
@@ -25,7 +24,7 @@
         "audios"
       ]
     },
-    "Gallery": {
+    "gallery": {
       "type": "media",
       "multiple": true,
       "allowedTypes": [
@@ -35,11 +34,21 @@
         "audios"
       ]
     },
-    "description": {
-      "type": "richtext"
+    "news_image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
     },
     "is_banner": {
       "type": "boolean"
+    },
+    "description": {
+      "type": "richtext"
     }
   }
 }
